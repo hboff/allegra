@@ -56,32 +56,32 @@
                 <div class="discover__container container swiper-container">
                     <div class="swiper-wrapper">
                         <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <div class="discover__card swiper-slide"><a href="/verkehrswertverfahren">
                             <img src="/img/verkehrswert.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Verkehrswert</h2>
                                 <span class="discover__description"></span>
-                            </div>
+                            </div></a>
                         </div>
 
                         <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <div class="discover__card swiper-slide"><a href="/sachwertverfahren">
                             <img src="/img/sachwert.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Sachwert</h2>
                                 <span class="discover__description"></span>
-                            </div>
+                            </div></a>
                         </div>
 
                         
 
                         <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <div class="discover__card swiper-slide"><a href="/ertragswertverfahren">
                             <img src="/img/ertragswert.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Ertragswert</h2>
                                 <span class="discover__description"></span>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                 </div>

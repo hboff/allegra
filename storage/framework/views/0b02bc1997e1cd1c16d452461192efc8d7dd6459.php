@@ -40,7 +40,7 @@
             </nav>
         </header>
 
-@yield('content')
+<?php echo $__env->yieldContent('content'); ?>
 
 	        <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -112,4 +112,4 @@
         <script src="assets/js/main.js"></script>
 
     </body>
-</html>
+</html><?php /**PATH C:\xampp\htdocs\allegra\allegra-1\resources\views/layout.blade.php ENDPATH**/ ?>

@@ -31,3 +31,12 @@ Route::get('/sonderimmobilien', function () {
 Route::get('/wohnimmobilien', function () {
     return view('show/wohnimmobilien');
 });
+Route::get('/verkehrswertverfahren', function () {
+    return view('show/verkehrswertverfahren');
+});
+Route::get('/sachwertverfahren', function () {
+    return view('show/sachwertverfahren');
+});
+Route::get('/ertragswertverfahren', function () {
+    return view('show/ertragswertverfahren');
+});
