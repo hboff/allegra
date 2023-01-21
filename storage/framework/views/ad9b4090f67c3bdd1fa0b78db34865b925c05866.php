@@ -97,7 +97,7 @@
 
 
                             <h2 class="experience__number">Bild</h2>
-                            <span class="experience__description glyphicon glyphicon-asterisk">Regionale <br/>Expertise</span>
+                            <span class="experience__description">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">

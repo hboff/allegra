@@ -22,7 +22,7 @@
                 </div>
             </section>
             <section class="container"> 
-            <p>Den Verkehrswert kennen sie auch als Marktwert</p>
+            <p>Den Verkehrswert kennen sie auch als Marktwert.</p>
 <p>Der Verkehrswert stellt bei der Immobilienbewertung die Anpassung der Wertermittlung an den jeweiligen Markt/Bedarf dar. </p>
 
             </section>
