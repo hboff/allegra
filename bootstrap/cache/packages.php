@@ -1,4 +1,11 @@
 <?php return array (
+  'blade-ui-kit/blade-icons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
@@ -20,6 +27,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'mallardduck/blade-boxicons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'MallardDuck\\BladeBoxicons\\BladeBoxiconsServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -39,6 +53,20 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    ),
+  ),
+  'owenvoke/blade-entypo' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'OwenVoke\\BladeEntypo\\BladeEntypoServiceProvider',
+    ),
+  ),
+  'owenvoke/blade-fontawesome' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider',
     ),
   ),
   'spatie/laravel-ignition' => 

@@ -1,15 +1,24 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'v9.5.1',
-        'version' => '9.5.1.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0735fbab44942b220b01750b8a0259df50e73c84',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'blade-ui-kit/blade-icons' => array(
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'reference' => '8e936041fcb016ad0344169d057d5a2f1a178091',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../blade-ui-kit/blade-icons',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'brick/math' => array(
             'pretty_version' => '0.10.2',
             'version' => '0.10.2.0',
@@ -358,6 +367,12 @@
                 0 => 'v9.48.0',
             ),
         ),
+        'jfvoliveira/blade-boxicons' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.1.2',
+            ),
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -374,9 +389,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v9.5.1',
-            'version' => '9.5.1.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0735fbab44942b220b01750b8a0259df50e73c84',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -460,6 +475,15 @@
             'reference' => 'ff6248ea87a9f116e78edd6002e39e5128a0d4dd',
             'type' => 'library',
             'install_path' => __DIR__ . '/../league/mime-type-detection',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'mallardduck/blade-boxicons' => array(
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'reference' => '2c9fa72de91fe4ae24c079bcc9a4508618b7a153',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../mallardduck/blade-boxicons',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -547,6 +571,24 @@
             'reference' => '594ab862396c16ead000de0c3c38f4a5cbe1938d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nunomaduro/termwind',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'owenvoke/blade-entypo' => array(
+            'pretty_version' => 'v2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '4627aa4d96a86c59e7194fbfdd4b7dd001cb255f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../owenvoke/blade-entypo',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'owenvoke/blade-fontawesome' => array(
+            'pretty_version' => 'v2.1.0',
+            'version' => '2.1.0.0',
+            'reference' => '8433b4590c058167a78773351a699c48c727e0c8',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../owenvoke/blade-fontawesome',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -718,8 +760,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(

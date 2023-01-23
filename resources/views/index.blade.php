@@ -95,21 +95,25 @@
                     <div class="experience__content grid">
                         <div class="experience__data">
 
+                        <x-entypo-location height="70" />
+                        <br>
 
-                            <h2 class="experience__number">Bild</h2>
                             <span class="experience__description">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
 
-                            <h2 class="experience__number">Bild</h2>
+                            <x-fas-graduation-cap height="70" />
+                        <br>
+
                             <span class="experience__description">Zertifiziert</span>
                         </div>
 
                         <div class="experience__data">
 
+                            <x-bxs-lock-open height="70"  />
+                        <br>
 
-                            <h2 class="experience__number">Bild</h2>
                             <span class="experience__description">Unabhängige <br/>Gutachter</span>
                         </div>
                     </div>
