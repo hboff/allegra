@@ -58,4 +58,12 @@ class OrteController extends Controller
         $status='de';
         return view ('show.ueber-uns', compact('status'));
     }
+    public function impressum() {
+        $status='de';
+        return view ('show.impressum', compact('status'));
+    }
+    public function datenschutzerklaerung() {
+        $status='de';
+        return view ('show.datenschutzerklaerung', compact('status'));
+    }
 }
