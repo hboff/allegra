@@ -106,9 +106,9 @@
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>
 
-        <script src="assets/js/scrollreveal.min.js"></script>
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="<?php echo e(asset('js/scrollreveal.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('js/swiper-bundle.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('js/main.js')); ?>"></script>
 
     </body>
 </html><?php /**PATH C:\xampp\htdocs\allegra\allegra-1\resources\views/layout.blade.php ENDPATH**/ ?>
