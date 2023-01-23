@@ -84,3 +84,11 @@ Route::get('/ertragswertverfahren', function () {
 Route::get('/ueber-uns', function () {
     return view('show/ueber-uns');
 });
+
+Route::get('/datenschutzerklaerung', function () {
+    return view('show/datenschutzerklaerung');
+});
+
+Route::get('/impressum', function () {
+    return view('show/impressum');
+});

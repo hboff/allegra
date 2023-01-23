@@ -87,7 +87,7 @@
                         <h3 class="footer__subtitle">Weitere Standorte</h3>
                         
 
-<?php echo $__env->make('partials._orte', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                         
                     </div>
                 </div>

@@ -1,5 +1,5 @@
-@extends('layout')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">
 
@@ -68,4 +68,5 @@ Im Rahmen der Kontaktaufnahme mit uns (z.B. per Kontaktformular oder E-Mail) wer
            
             </section>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\allegra\allegra-1\resources\views/show/datenschutzerklaerung.blade.php ENDPATH**/ ?>
