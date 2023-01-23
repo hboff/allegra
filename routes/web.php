@@ -40,3 +40,6 @@ Route::get('/sachwertverfahren', [OrteController::class, 'sachwertverfahren'], f
 
 Route::get('/ertragswertverfahren', [OrteController::class, 'ertragswertverfahren'], function () {
 });
+
+Route::get('/ueber-uns', [OrteController::class, 'ueberuns'], function () {
+});

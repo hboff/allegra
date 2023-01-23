@@ -54,4 +54,8 @@ class OrteController extends Controller
         $status='de';
         return view ('show.wohnimmobilien', compact('status'));
     }
+    public function ueberuns() {
+        $status='de';
+        return view ('show.ueber-uns', compact('status'));
+    }
 }
