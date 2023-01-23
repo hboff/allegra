@@ -87,7 +87,7 @@
                         <h3 class="footer__subtitle">Weitere Standorte</h3>
                         
 
-@include('partials._orte')
+
                         
                     </div>
                 </div>
