@@ -5,7 +5,7 @@ case ('de'): ?>
     ?>
     <?php $__currentLoopData = $ort; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $orte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     <?php if($i++ < 50): ?>
-    <a class="link-dark" href="/<?php echo e($orte->ortschweiz); ?>/immobilienbewertung">Immobilienbewertung <?php echo e($orte['ortschweiz']); ?></a>
+    <a class="link-dark" href="/<?php echo e($orte->stadt_umlaut); ?>/immobilienbewertung">Immobilienbewertung <?php echo e($orte['stadt_lang']); ?></a>
     <?php else: ?>
     <?php endif; ?>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
