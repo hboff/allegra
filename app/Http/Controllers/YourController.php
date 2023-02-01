@@ -23,7 +23,7 @@ $innerValues = [
 ];
 
 foreach ($outerValues as $outerValue) {
-    Route::group(['domain' => $outerValue], function () use ($outerValue, $innerValues) { 
+    Route::group(['domain' => 'immobilienbewertung-duisburg.com'], function () use ($outerValue, $innerValues) { 
 
   foreach ($innerValues as $innerValue) {
     Route::get("/$innerValue", function () use ($outerValue, $innerValue) {
