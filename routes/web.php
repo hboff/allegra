@@ -19,7 +19,7 @@ $views = [
 // Loop for handling routes
 foreach ($domains as $domain) {
     Route::group(['domain' => $domain], function() use ($views) {
-        Route::get('/', 'OskarController@index');
+        Route::get('/', 'Controller@index');
         foreach ($views as $view) {
             Route::view("/$view", "$view");
         }
