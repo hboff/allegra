@@ -13,7 +13,9 @@ use App\Http\Controllers\OrteController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', function () {
+    return 'Hello World';
+});
 
 //Route::get('/', [OrteController::class, 'index'], function () {
 //});
@@ -37,9 +39,7 @@ use App\Http\Controllers\OrteController;
 //});
 //Route::get('/ueber-uns', [OrteController::class, 'ueberuns'], function () {
 //});
-Route::get('/ueber-uns', function () {
-    return 'Hello World';
-});
+
 //Route::get('/impressum', [OrteController::class, 'impressum'], function () {
 //});
 //Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung'], function () {
