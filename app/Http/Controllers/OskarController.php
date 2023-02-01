@@ -17,4 +17,13 @@ class OskarController extends Controller
                 
         return view('welcome', ['localort' => $localort]);
     }
+           public function index2()
+    {
+        $localort = DB::table('orteat')
+                ->whereBetween('breitengrad', [47.5, 48.1])
+                ->whereBetween('laengengrad', [15.5, 48.1])
+                ->get(); 
+                
+        return view('welcome', ['localort' => $localort]);
+    }
 }

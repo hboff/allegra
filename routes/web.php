@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OrteController;
+use App\Http\Controllers\OskarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,18 @@ Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklae
 });
 });
 
+Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
+
+Route::get('/', [OskarController::class, 'index2'], function () {
+    return view('welcome');
+});
+Route::get('/impressum', [OskarController::class, 'impressum'], function () {
+    return view('impressum');
+});
+Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung'], function () {
+    return view('datenschutzerklaerung');
+});
+});
 
 //Route::get('/', [OrteController::class, 'index'], function () {
 //});
