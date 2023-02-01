@@ -22,6 +22,10 @@ class OrteController extends Controller
         $status='de';
         return view ('index', compact('status'));
     }
+    public function index2() {
+        $status='de';
+        return view ('index', compact('status'));
+    }
     public function ertragswertverfahren() {
         $status='de';
         return view ('show.ertragswertverfahren', compact('status'));
