@@ -3,22 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+
 
 class YourController extends Controller
 {
-    public function registerRoutes()
-{
-  $values = [
-    'value1',
-    'value2',
-    'value3',
-  ];
+public function registerRoutes()
+  {
+    $outerValues = [
+      'immobilienbewertung-duisburg.com',
+      'outerValue2',
+      'outerValue3',
+    ];
 
-  foreach ($values as $value) {
-    Route::get("/$value", function () use ($value) {
-      return view('welcome', compact('value'));
-    });
+$innerValues = [
+'datenschutzerklaerung',
+'welcome',
+'index',
+];
+
+foreach ($outerValues as $outerValue) {
+    Route::group(['domain' => $outerValue], function () use ($outerValue, $innerValues) { 
+
+  foreach ($innerValues as $innerValue) {
+    Route::get("/$innerValue", function () use ($outerValue, $innerValue) {
+      return view($innerValue, compact('outerValue', 'innerValue'));
+    });       
   }
+}); 
 }
 }
+}
+
+
