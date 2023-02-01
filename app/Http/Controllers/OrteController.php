@@ -64,6 +64,6 @@ class OrteController extends Controller
     }
     public function datenschutzerklaerung() {
         $status='de';
-        return view ('show.datenschutzerklaerung', compact('status'));
+        return view ('datenschutzerklaerung', compact('status'));
     }
 }
