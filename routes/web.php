@@ -31,11 +31,11 @@ use App\Http\Controllers\OskarController;
 
 
 
-Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
-Route::get('/', [OskarController::class, 'index']);
-Route::get('/impressum', [OskarController::class, 'impressum']);
-Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
-});
+//Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
+//Route::get('/', [OskarController::class, 'index']);
+//Route::get('/impressum', [OskarController::class, 'impressum']);
+//Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
+//});
 //Route::get('/', [OrteController::class, 'index'], function () {
 //});
 //Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz'], function () {

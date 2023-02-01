@@ -13,8 +13,7 @@ public function registerRoutes()
   {
     $outerValues = [
       'immobilienbewertung-duisburg.com',
-      'outerValue2',
-      'outerValue3',
+      'immobilienbewertung-bochum.com',
     ];
 
 $innerValues = [
