@@ -12,19 +12,29 @@ class YourController extends Controller
 {
     public function registerRoutes()
 {
-  $values = [
+$domains = [
+    'immobilienbewertung-bochum.com',
+    'immobilienbewertung-duisburg.com',
+];
+
+// Define the views
+$views = [
     'datenschutzerklaerung',
     'welcome',
     'index',
-  ];
+];
 
-  foreach ($values as $value) {
-    Route::get("/$value", function () use ($value) {
-      return view($value, compact('value'));
+// Loop for handling routes
+foreach ($domains as $domain) {
+    Route::group(['domain' => $domain], function() use ($views) {
+        foreach ($views as $view) {
+            Route::view("/$view", "$view");
+        }
     });
-  }
+} 
 }
 }
+
 
 
 

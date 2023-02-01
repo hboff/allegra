@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OskarController;
-(new App\Http\Controllers\YourController)->registerRoutes();
-
+(new App\Http\Controllers\YourController)->registerRoutes(); 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,12 +13,19 @@ use App\Http\Controllers\OskarController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['domain' => 'immobilienbewertung-duisburg.com'], function () {
-Route::get('/', [OskarController::class, 'index']);
-Route::get('/impressum', [OskarController::class, 'impressum']);
-Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
-Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien']);
-});
+//Route::group(['domain' => 'immobilienbewertung-duisburg.com'], function () {
+//Route::get('/', [OskarController::class, 'index']);
+//Route::get('/impressum', [OskarController::class, 'impressum']);
+//Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
+//Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien']);
+//
+//$pages = array('welcome', 'contact', 'faqs');  
+//foreach ($pages as $page) {
+//    Route::get($page, function () use ($page) { 
+//        return view($page);
+//    }); 
+//}
+//});
 
 
 
