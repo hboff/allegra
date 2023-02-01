@@ -14,7 +14,7 @@ use App\Http\Controllers\OrteController;
 |
 */
 
-
+ 
 Route::get('/', [OrteController::class, 'index'], function () {
 });
 Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz'], function () {
@@ -40,8 +40,4 @@ Route::get('/ueber-uns', [OrteController::class, 'ueberuns'], function () {
 Route::get('/impressum', [OrteController::class, 'impressum'], function () {
 });
 Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung'], function () {
-});
-
-Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
-    Route::get('/', [OrteController::class, 'index'], function () { } );
 });
