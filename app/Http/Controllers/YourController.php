@@ -28,7 +28,7 @@ $views = [
 foreach ($domains as $domain) {
     Route::group(['domain' => $domain], function() use ($views) {
         foreach ($views as $view) {
-            Route::view("/$view", "$view");
+            Route::view("/$view", "welcome");
         }
     });
 } 
