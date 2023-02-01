@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OskarController;
+(new App\Http\Controllers\YourController)->registerRoutes();
 
 /*
 |--------------------------------------------------------------------------
@@ -13,27 +14,27 @@ use App\Http\Controllers\OskarController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['domain' => 'immobilienbewertung-duisburg.com'], function () {
-Route::get('/', [OskarController::class, 'index']);
-Route::get('/impressum', [OskarController::class, 'impressum'], function () {
-    return view('impressum');
-});
-Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung'], function () {
-    return view('datenschutzerklaerung');
-});
-});
+//Route::group(['domain' => 'immobilienbewertung-duisburg.com'], function () {
+//Route::get('/', [OskarController::class, 'index']);
+//Route::get('/impressum', [OskarController::class, 'impressum']);
+//Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
+//Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien']);
+//
+//$pages = array('welcome', 'contact', 'faqs');  
+//foreach ($pages as $page) {
+//    Route::get($page, function () use ($page) { 
+//        return view($page);
+//    }); 
+//}
+//});
+
+
+
 
 Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
-
-Route::get('/', [OskarController::class, 'index'], function () {
-    return view('welcome');
-});
-Route::get('/impressum', [OskarController::class, 'impressum'], function () {
-    return view('impressum');
-});
-Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung'], function () {
-    return view('datenschutzerklaerung');
-});
+Route::get('/', [OskarController::class, 'index']);
+Route::get('/impressum', [OskarController::class, 'impressum']);
+Route::get('/datenschutzerklaerung', [OskarController::class, 'datenschutzerklaerung']);
 });
 //Route::get('/', [OrteController::class, 'index'], function () {
 //});
