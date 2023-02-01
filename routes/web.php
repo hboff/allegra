@@ -13,9 +13,6 @@ use App\Http\Controllers\OrteController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['domain' => 'immobilienbewertung-bochum.com'], function () {
-    Route::get('/', [OrteController::class, 'index'], function () { } );
-});
 
 
 Route::get('/', [OrteController::class, 'index'], function () {
