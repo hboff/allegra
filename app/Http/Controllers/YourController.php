@@ -10,31 +10,20 @@ use Illuminate\Support\Facades\Route;
 
 class YourController extends Controller
 {
-public function registerRoutes()
+    public function registerRoutes()
 {
-    $outerValues = [
-      'immobilienbewertung-duisburg.com',
-      'immobilienbewertung-bochum.com',
-    ];
+  $values = [
+    'datenschutzerklaerung',
+    'welcome',
+    'index',
+  ];
 
-    $innerValues = [
-      'datenschutzerklaerung',
-      'welcome',
-      'index',
-    ];
-
-    foreach ($outerValues as $outerValue) {
-        Route::group(['domain' => $outerValue], function () use ($outerValue, $innerValues) { 
-
-        foreach ($innerValues as $innerValue) {
-            Route::get("/$innerValue", function () use ($outerValue, $innerValue) {
-                return view($innerValue, compact('outerValue', 'innerValue'));
-            });       
-        }
-    }); 
+  foreach ($values as $value) {
+    Route::get("/$value", function () use ($value) {
+      return view($value, compact('value'));
+    });
   }
 }
-
 }
 
 
