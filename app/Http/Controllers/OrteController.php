@@ -22,6 +22,10 @@ class OrteController extends Controller
         $status='de';
         return view ('index', compact('status'));
     }
+    public function index2() {
+        $status='de';
+        return view ('index', compact('status'));
+    }
     public function ertragswertverfahren() {
         $status='de';
         return view ('show.ertragswertverfahren', compact('status'));
@@ -64,6 +68,6 @@ class OrteController extends Controller
     }
     public function datenschutzerklaerung() {
         $status='de';
-        return view ('show.datenschutzerklaerung', compact('status'));
+        return view ('datenschutzerklaerung', compact('status'));
     }
 }
