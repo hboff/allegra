@@ -4,8 +4,13 @@
                     <div class="footer__data">
                         <h3 class="footer__title">Allegra Immobilienbewertung</h3>
                         <p class="footer__description">Wenn es um die Bewertung von Immobilien geht, ist Qualität der Schlüssel.
-                        </p>
-                        <a href="/"><img src="/img/logo.png" alt="Allegra Immobilienbewertung"></a>
+                        <img src="/img/logo.png" alt="" style="    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+object-position: center;" class="description">
+                        
                         <div>
                             <a href="https://www.facebook.com/" target="_blank" class="footer__social">
                                 <i class="ri-facebook-box-fill"></i>
